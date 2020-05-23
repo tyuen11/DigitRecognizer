@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{  url_for('static', filename='css/main.css') }}">
+    <title>Title</title>
+    {% block head %}{% endblock %} {# creating a block in the template that tells where to insert code on other pages that inherit this template#}
+</head>
+<body>
+    {% block body %}{% endblock %}
+</body>
+</html>
+
+{#Template Inheritance - skeleton html that other html pages would inherit so ^ does not have to be rewritten  #}
